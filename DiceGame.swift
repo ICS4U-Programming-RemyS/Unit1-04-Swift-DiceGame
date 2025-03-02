@@ -41,19 +41,19 @@ func diceGame() {
         guard let guessAsString = readLine() else {
             // Error message
             print("Invalid input. Please enter a integer between 1 and 6.")
-            // Return 
-            return
+            // must use continue to go back to the start of the loop with guard
+            continue
         }
 
         // Safely convert user guess as a string to int and use guard to make sure input is valid
         guard let guessAsIntLoop = Int(guessAsString) else {
             // Error message
             print("Invalid input: \(guessAsString). Please enter an integer between 1 and 6.")
-            // Return
-            return
+            // must use continue to go back to the start of the loop with guard
+            continue
         }
 
-        // Set guessAsInt to guessAsIntLoop for loop to work
+        // Set guessAsInt to guessAsIntLoop for loop condition to work
         guessAsInt = guessAsIntLoop
 
         // If to see if guess is between 1 and 6 inclusive
