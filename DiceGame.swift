@@ -41,7 +41,7 @@ func diceGame() {
         guard let guessAsString = readLine() else {
             // Error message
             print("Invalid input. Please enter a integer between 1 and 6.")
-            // must use continue to go back to the start of the loop with guard
+            // Must use continue to go back to the start of the loop with guard
             continue
         }
 
@@ -49,7 +49,7 @@ func diceGame() {
         guard let guessAsIntLoop = Int(guessAsString) else {
             // Error message
             print("Invalid input: \(guessAsString). Please enter an integer between 1 and 6.")
-            // must use continue to go back to the start of the loop with guard
+            // Must use continue to go back to the start of the loop with guard
             continue
         }
 
